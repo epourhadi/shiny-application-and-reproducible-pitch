@@ -1,0 +1,45 @@
+---
+title: "Data Products Course Week 4 Project -function plot"
+author: "Ehsan Pourhadi"
+date: "August 28, 2018"
+output: ioslides_presentation
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Overview
+This presentation deals with plot a polynomial function as project for Data Products Course in week 4.
+
+The application demo built by Shiny and can be observed at the URL: https://epourhadi.shinyapps.io/Shiny-Application-and-Reproducible-Pitch/
+
+Source codes incluiding **ui.R** and **server.R** are at GitHub for the application and presnetation at the URL:
+
+https://github.com/epourhadi/shiny-application-and-reproducible-pitch
+
+## Goal of our Web Application 
+
+This web application is built to study the geometric shape of a third order polynomial 
+in 2-dimensional space by changing the three coefficients. 
+
+## For user only
+
+Our application provides user with some different inputs:
+
+- The defined function "calculateParabola" is the important part of the body of web application and three variables (subjected to this study) are defined here.
+
+- Consider the lower and upper bounds "xlim" and "ylim" in Cartesian coordinates.
+
+- Consider the commands "geom_line" and "geom_vline" (for vertical lines), "geom_hline" (for horizontal lines) and "geom_point".
+
+
+## Look at plot for some fixed parameters 
+For the coefficients 1,0,0 as initial values of our variables we get:
+```{r}
+y<-function(x) (1 * (0 - x)^3 +0*x)
+plot(y, xlim=c(-10,10))
+```
+
+
+
